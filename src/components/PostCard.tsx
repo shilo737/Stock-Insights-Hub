@@ -310,8 +310,8 @@ function PostCard({ post }: { post: Post }) {
       </header>
 
       <h2 className="mt-3 text-lg font-semibold leading-snug">{post.title}</h2>
-      <p className="mt-1.5 whitespace-pre-wrap break-words text-sm leading-relaxed text-slate-300">
-        <RichText text={post.content} />
+      <p className="mt-1.5 text-sm leading-relaxed text-slate-300">
+        <RichText text={post.content} maxLength={280}/>
       </p>
 
       <footer className="mt-4 flex items-center justify-between">
